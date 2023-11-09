@@ -5,7 +5,7 @@
 Using NAT connection you can specific port forwards in the nat.conf file:
 For example when running wireguard(on a VM, not the host) you'll want to ensure that all UDP traffic from port 51820 is forwarded to the VM
 ```
-[incomingudp
+[incomingudp]
 <external port number(port on host machine)> = <VM's IP address>:<VM's port number>
 51820 = 172.16.254.132:51820
 ```
