@@ -1,0 +1,2 @@
+# Allows you to monitor traffic on an iterface for a given port
+sudo tcpdump -i <interface-name> port <port-number>

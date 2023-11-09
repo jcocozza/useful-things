@@ -1,0 +1,5 @@
+# This was used to get my VPN server up and running
+# After traffic leaves the server redirect it to the "internet interface ens33"
+# Pretty sure this is a consequence of hosting the VPN on a VM which is in-turn hosted on a NAT connection
+# (WireGuard didn't know to send it back to ens33 so that it could be send out to the VM host machine)
+sudo iptables -t nat -A POSTROUTING -o ens33 -j MASQUERADE
