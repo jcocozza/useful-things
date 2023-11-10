@@ -9,3 +9,8 @@
 ## Interfaces
 Create an interface as `/etc/wireguard/<interface-name>.conf` e.g. `/etc/wireguard/wg0.conf`
 
+## Adding Clients:
+
+- `qrencode --read-from=<path/to/client.conf> --type=UTF8` Generate a qr code for a client config file
+- `sudo wg show wg0 public-key` show public key of server
+- 
