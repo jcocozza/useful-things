@@ -5,11 +5,11 @@
 app_name="$1"
 
 # Linux
-GOOS=linux GOARCH=amd64 go build -o "$1_linux"
+GOOS=linux GOARCH=amd64 go build -o "$1_Linux"
 
 # MacOS
-GOOS=darwin GOARCH=amd64 go build -o "$1_macOS_amd64"
-GOOS=darwin GOARCH=arm64 go build -o "$1_macOS_arm64"
+GOOS=darwin GOARCH=amd64 go build -o "$1_Darwin_amd64"
+GOOS=darwin GOARCH=arm64 go build -o "$1_Darwin_arm64"
 
 # Windows
-GOOS=windows GOARCH=amd64 go build -o "$1_windows"
+GOOS=windows GOARCH=amd64 go build -o "$1_Windows"
